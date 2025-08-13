@@ -24,8 +24,8 @@ Cari baris ke-66 sampai 71. Pastikan baris-baris ini tidak diawali dengan tanda 
 ~~~
 LoadModule mpm_prefork_module libexec/apache2/mod_mpm_prefork.so
 LoadModule php_module libexec/apache2/libphp.so
-<FilesMatch \.php$>9
-SetHandler application/x-httpd-php
+<FilesMatch \.php$>
+  SetHandler application/x-httpd-php
 </FilesMatch>
 ~~~
 - Mengubah DocumentRoot
