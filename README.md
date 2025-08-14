@@ -72,6 +72,6 @@ Simpan file dengan menekan Ctrl + X, ketik Y, dan Enter.
   ~~~
 - Memuat Ulang Konfigurasi Apache:
   ~~~
-  nginx -s reload
+  apachectl restart
   ~~~
   Perintah ini sangat berguna setelah Anda melakukan perubahan pada file konfigurasi tanpa perlu mematikan dan menyalakan ulang server.
