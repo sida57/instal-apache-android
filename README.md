@@ -63,15 +63,15 @@ Simpan file dengan menekan Ctrl + X, ketik Y, dan Enter.
 ## 🚦 Perintah Penting<a name=perintah></a>
 ### Berikut adalah beberapa perintah dasar untuk mengelola Nginx:
 - Mulai Apache:
-~~~
-apachectl
-~~~
-Berhenti/Matikan Apache:
-~~~
-apachectl stop
-~~~
-- Memuat Ulang Konfigurasi Nginx:
-    ~~~
-    nginx -s reload
-    ~~~
-    Perintah ini sangat berguna setelah Anda melakukan perubahan pada file konfigurasi tanpa perlu mematikan dan menyalakan ulang server.
+  ~~~
+  apachectl
+  ~~~
+- Berhenti/Matikan Apache:
+  ~~~
+  apachectl stop
+  ~~~
+- Memuat Ulang Konfigurasi Apache:
+  ~~~
+  nginx -s reload
+  ~~~
+  Perintah ini sangat berguna setelah Anda melakukan perubahan pada file konfigurasi tanpa perlu mematikan dan menyalakan ulang server.
