@@ -22,16 +22,16 @@ Perintah ini menentukan nama server yang akan digunakan oleh Apache.
 - Mengaktifkan Modul PHP
 Cari baris ke-66 sampai 71. Pastikan baris-baris ini tidak diawali dengan tanda # (komentar). Baris-baris ini mengaktifkan modul PHP sehingga Apache bisa memproses file dengan ekstensi .php.
 ~~~
-LoadModule mpm_prefork_module libexec/apache2/mod_mpm_prefork.so
 LoadModule php_module libexec/apache2/libphp.so
 <FilesMatch \.php$>
-  SetHandler application/x-httpd-php
+SetHandler application/x-httpd-php
 </FilesMatch>
+#LoadModule mpm_worker_module libexec/apache2/mod_>
 ~~~
 - Mengubah DocumentRoot
 Cari baris ke-249 dan 250, lalu ubah jalur DocumentRoot dan Directory ke direktori web yang akan kamu gunakan. Dalam contoh ini, kita akan menggunakan folder htdocs yang ada di direktori home Termux. Kamu bisa membuatnya jika belum ada.
-DocumentRoot "/data/data/com.termux/files/home/htdocs"
 ~~~
+DocumentRoot "/data/data/com.termux/files/home/htdocs"
 <Directory "/data/data/com.termux/files/home/htdocs">
 ~~~
 - Mengatur DirectoryIndex
